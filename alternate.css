@@ -1,0 +1,154 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define default font styles */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f0f0f0;
+    color: red;
+    line-height: 1.5;
+    margin: 20px;
+	text-align: center;
+}
+
+/* Define heading styles */
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: red;
+    margin: 20px;
+	text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0066cc;
+}
+
+/* Define link styles */
+a {
+    text-decoration: none;
+    color: red;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #cc0000;
+}
+/* Change the color to a different one for visited links */
+a:visited {
+    color: Black; 
+}
+
+/* Define navigation menu styles */
+nav {
+    background-color: #0066cc;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Define footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.button {
+    background-color: #cc0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #990000;
+    transform: scale(1.1);
+}
+
+/* Improve image layout */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    margin: 20px;
+    border: 2px solid #0066cc;
+    border-radius: 10px;
+}
+
+/* Style custom list */
+.custom-list {
+    list-style: none;
+    padding-left: 30px;
+    margin: 20px;
+}
+
+.custom-list li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #cc0000;
+}
+
+/* Style custom table */
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.custom-table th {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+/* Add hover effect to table rows */
+.custom-table tr:hover {
+    background-color: #f0f0f0;
+    color: #cc0000;
+}
+ @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+}
+img:hover {
+            animation: fadeIn 1s ease-in-out;
+}

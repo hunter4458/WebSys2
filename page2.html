@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeyondTheBark - Page 2</title>
+    <link rel="stylesheet" href="main.css">
+	 <script>
+        <!-- JavaScript for CSS toggle -->
+
+        function toggleStylesheet() {
+    const stylesheets = document.querySelectorAll('link[rel="stylesheet"]');
+    
+    stylesheets.forEach((stylesheet) => {
+        if (stylesheet.href.endsWith('main.css')) {
+            stylesheet.href = 'alternate.css';
+        } else if (stylesheet.href.endsWith('alternate.css')) {
+            stylesheet.href = 'main.css';
+        }
+    });
+}
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Helpful Links</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Page 2</a></li>
+                <li><a href="https://www.youtube.com/watch?v=jFMA5ggFsXU" target="_blank">Barkfull Training</a></li>
+                <li><a href="https://www.chewy.com/b/treats-335" target="_blank">Barkingly Good Treats</a></li>
+            </ul>
+            <button class="button" onclick="toggleStylesheet()">Toggle CSS</button>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Links to Bark About</h2>            
+		   <li><a href="https://www.youtube.com/watch?v=jFMA5ggFsXU" target="_blank">Barkfull Training</a></li>
+           <li><a href="https://www.chewy.com/b/treats-335" target="_blank">Barkingly Good Treats</a></li>
+		   <li><a href="https://www.barkbox.com/" target="_blank">BarkBox Toys</a></li>
+		   <li><a href="https://sitmeanssit.com/" target="_blank">Sit Means Sit</a></li>
+		   <li><a href="https://www.youtube.com/watch?v=5BeirR8Yf1k" target="_blank">Funny Video to Bark about</a></li>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 BeyondTheBark</p>
+    </footer>
+	
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeyondTheBark - Home</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        <!--JavaScript for CSS toggle -->
+        function toggleStylesheet() {
+            const stylesheets = document.querySelectorAll('link[rel="stylesheet"]');
+            stylesheets.forEach((stylesheet) => {
+                if (stylesheet.href.endsWith('main.css')) {
+                    stylesheet.href = 'alternate.css';
+                } else if (stylesheet.href.endsWith('alternate.css')) {
+                    stylesheet.href = 'main.css';
+                }
+            });
+        }
+		
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to <span class="logo">BeyondTheBark</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Helpful Links</a></li>
+                <li><a href="https://www.youtube.com/watch?v=jFMA5ggFsXU" target="_blank">Barkfull Training</a></li>
+                <li><a href="https://www.chewy.com/b/treats-335" target="_blank">Barkingly Good Treats</a></li>
+            </ul>
+            <button class="button" onclick="toggleStylesheet()">Toggle CSS</button>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Barking Beyond</h2>
+            <p>"Our beloved canine companions are not just our pets; they are our dearest friends, our confidants, and our unwavering companions on life's journey. 
+				They are more than furry companions; 
+				they are our BEST FRIENDS, sharing in our joys and comforting us in times of need. 
+				Their love and loyalty go far beyond the simple act of barking; 
+				it's a deep and unspoken connection that warms our hearts and enriches our lives."</p>
+        </article>
+        <article>
+            <h2>Helpful Links</h2>
+            <p>Want some barkingly good training, treats, or toys? Check out our helpful links on page 2 and our main ones at the top in the navigation menu!</p>
+            <a class="read-more" href="page2.html">Read More</a>
+        </article>
+
+        <!-- Images of Pups -->
+        <article>
+            <h2>Bark Of Fame</h2>
+            <div class="image-container">
+				<img src="IMG_8128.jpg" alt="Image 1" width="300" height="300"> 
+                <img src="IMG_4503.jpg" alt="Image 2" width="300" height="300">
+                <img src="IMG_8127.jpg" alt="Image 3" width="300" height="300">
+                <img src="IMG_4953.jpg" alt="Image 4" width="300" height="300">
+                <img src="IMG_7802.jpg" alt="Image 5" width="300" height="300">
+				<img src="IMG_5043.jpg" alt="Image 6" width="300" height="300">
+				<img src="IMG_7655.jpg" alt="Image 7" width="300" height="300">
+				<img src="IMG_4983.jpg" alt="Image 8" width="300" height="300">
+            </div>
+        </article>
+
+        <!-- Unordered List of Toys -->
+        <article>
+            <h2>Favorite Toys</h2>
+            <ul class="custom-list">
+                <li>Tennis Ball</li>
+                <li>Plush Carrot</li>
+                <li>Doggie Bone</li>
+                <li>Toy Tire</li>
+                <li>Pulling Rope</li>
+            </ul>
+        </article>
+
+        <!-- Puppy Table -->
+        <article>
+            <h2>Our Dogs</h2>
+			<table class="custom-table">
+			<thead>
+			<tr>
+				<th>Dog Name</th>
+				<th>Breed</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Jax</td>
+				<td>Yellow Labrador</td>
+				<td>8 years</td>
+			</tr>
+			<tr>
+				<td>Bruno</td>
+				<td>King Charles Cavalier</td>
+				<td>6 months</td>
+			</tr>
+			<tr>
+				<td>Bunny</td>
+				<td>White German Shepherd</td>
+				<td>7 months</td>
+			</tr>
+			<tr>
+				<td>Akamaru(ru)</td>
+				<td>White German Shepherd</td>
+				<td>7 months</td>
+			</tr>
+		</tbody>
+	</table>
+
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 BeyondTheBark</p>
+    </footer>
+</body>
+</html>

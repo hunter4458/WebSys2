@@ -1,0 +1,163 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define default font styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Define heading styles */
+h1, h2 {
+	padding: 10px
+	background-color: #black;
+    font-family: 'Helvetica', sans-serif;
+    color: #007acc;
+    margin: 0;
+    transition: color 0.3s;
+	
+}
+h2 {
+    padding: 10px;
+    background-color: #FF6600;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+article h2:nth-child(3) {
+    background-color: #FF6600;
+}
+h1:hover, h2:hover {
+    color: #005f99;
+}
+
+/* Define link styles */
+a {
+    text-decoration: none;
+    color: #007acc;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #005f99;
+    transform: scale(1.05);
+}
+ /* Change the color to a different one for visited links */
+a:visited {
+    color: red;
+}
+
+
+/* Define navigation menu styles */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.logo {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/* Define footer styles */
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.button {
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #005f99;
+    transform: scale(1.1);
+}
+
+/* Improve image layout */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    margin: 10px;
+}
+
+
+
+/* Style custom list */
+.custom-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.custom-list li {
+    margin: 5px 0;
+}
+
+/* Style custom table */
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #f2f2f2;
+}
+
+/* Add hover effect to table rows */
+.custom-table tr:hover {
+    background-color: #f5f5f5;
+}
+.image-container img {
+    margin: 10px;
+    border: 2px solid #FFA500; 
+    border-radius: 5px;
+}
+ @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+}
+img:hover {
+            animation: fadeIn 1s ease-in-out;
+}
